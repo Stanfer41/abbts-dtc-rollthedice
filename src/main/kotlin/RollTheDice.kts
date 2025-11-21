@@ -9,16 +9,11 @@ import kotlin.random.Random
  */
 
 fun main() {
-
     println("Gebe deinen Namen ein")
     var name: String = readln()
-
-    // Todo: Ausgeben, wer mehr Runden gewonnen hat
-
     var breakGame : String = "Ja"
     var wincomputer = 0
     var winuser = 0
-
     while (breakGame.equals("ja", ignoreCase = true)) {
         val aDie = Random
         val playerScore = aDie.nextInt(1,7)
