@@ -10,10 +10,6 @@ import kotlin.random.Random
 
 fun main() {
 
-    val aDie = Random
-    val playerScore = aDie.nextInt(1,7)
-    val computerScore = aDie.nextInt(1,7)
-
     println("Gebe deinen Namen ein")
     var name: String = readln()
 
@@ -24,6 +20,10 @@ fun main() {
     var winuser = 0
 
     while (breakGame.equals("ja", ignoreCase = true)) {
+
+        val aDie = Random
+        val playerScore = aDie.nextInt(1,7)
+        val computerScore = aDie.nextInt(1,7)
 
         println(name + " würfelt: $playerScore  --  Computer würfelt: $computerScore")
         when {
