@@ -20,11 +20,9 @@ fun main() {
     var winuser = 0
 
     while (breakGame.equals("ja", ignoreCase = true)) {
-
         val aDie = Random
         val playerScore = aDie.nextInt(1,7)
         val computerScore = aDie.nextInt(1,7)
-
         println(name + " würfelt: $playerScore  --  Computer würfelt: $computerScore")
         when {
             playerScore > computerScore ->{
@@ -38,13 +36,8 @@ fun main() {
             else -> println("Unentschieden")
         }
         println("Möchtest du weiter Spielen ? (Ja/Nein)")
-
         breakGame = readln()
     }
-
     println(name + " hat $winuser mal gewonnen")
     println("Computer hat $wincomputer mal gewonnen")
-
 }
-
-main()
